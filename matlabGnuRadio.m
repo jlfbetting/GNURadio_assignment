@@ -54,7 +54,7 @@ ylabel('chance of error');
 
 disp('The minimal chance of error for Rotterdamseweg is:');
 idealThresholdR = min(R_type1 + R_type2);
-disp(idealThresholdR);
+disp(idealThresholdR/2);
 indexMinR = find((R_type1 + R_type2)==idealThresholdR);
 disp('This is achieved by choosing a threshold [dB] of:');
 powerR(indexMinR)
@@ -73,7 +73,7 @@ ylabel('chance of error');
 
 disp('The minimal chance of error for Heertjeslaan is:');
 idealThresholdH = min(H_type1 + H_type2);
-disp(idealThresholdH);
+disp(idealThresholdH/2);
 indexMinH = find((H_type1 + H_type2)==idealThresholdH);
 disp('This is achieved by choosing a threshold [dB] of:');
 powerH(indexMinH)
@@ -92,7 +92,7 @@ ylabel('chance of error');
 
 disp('The minimal chance of error for Bieslandse Kade is:');
 idealThresholdB = min(B_type1 + B_type2);
-disp(idealThresholdB);
+disp(idealThresholdB/2);
 indexMinB = find((B_type1 + B_type2)==idealThresholdB);
 disp('This is achieved by choosing a threshold [dB] of:');
 powerB(indexMinB)
